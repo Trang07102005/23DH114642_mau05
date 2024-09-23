@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout1.cshtml";
+}
+<style type="text/css">
+    #banner{
+        background-image:url("../Content/banner1.jpg");
+        background-size:cover;
+        background-position:center;
+        height: 400px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        color:black;
+     
+    }
+    .banner-content{
+        text-align:center;
+        color:black;
+    }
+    .banner-content h2{
+        font-size:2.5rem;    
+    }
+    .banner-content p{
+        font-size:2rem;
+    }
+    .btn{
+        display:inline-block;
+        padding: 5px 20px;
+        background-color:coral;
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    #featureProd{
+        text-align:center;
+    }
+    #featureProd h2{
+        font-size:2rem;
+        margin-bottom:20px;
+
+    }
+    .ProdContainer{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+    .product-item{
+        width:200px;
+    }
+    .product-item h3{
+        font-size: 16px;
+        color: black;
+        margin: 10px 0px;
+    }
+    .prodDescription{
+        font: arial;
+        font-size:12px;
+        color:grey;
+    }
+    .prodPrice{
+        font-size:12px;
+        color:black;
+        font-weight:bold;
+    }
+</style>
+<section id="banner">
+    <div class="banner-content">
+        <h2>Chào mừng đến với trang bán quần áo của chúng tôi</h2>
+        <p>Hàng ngàn sản phẩm đang chờ đón bạn</p>
+        <a href="#" class="btn">Bắt đầu mua sắm</a>
+        
+    </div>
+</section>
+
+    <section id="search" class="content-section">
+
+    </section>
+    <section id="featureProd" class="content-section">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="ProdContainer">
+            <div class="product-item">
+                <img src="~/Content/product.png" width="200" height="300" />
+                <h3>Air Jordan 1 Low</h3>
+                <p class="prodDescription">Men's Shoes</p>
+                <p class="prodPrice">3,519,000</p>
+            </div>
+            <div class="product-item">
+                <img src="~/Content/product1.png" width="200" height="300"/>
+                <h3>Air Jordan | High G</h3>
+                <p class="prodDescription">Men's Golf Shoes</p>
+                <p class="prodPrice">5,279,000</p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="productList">
+
+    </section>
+
+

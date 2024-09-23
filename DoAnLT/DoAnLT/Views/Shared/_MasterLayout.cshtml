@@ -1,0 +1,63 @@
+﻿<style type="text/css">
+    html {
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .logo img {
+        height: 100px;
+    }
+    .search-garident {
+        height: 40px;
+        width: 100%;
+        border-radius: 30px;
+        display: block;
+        padding: 5px 15px 5px 15px;
+        background: var(--tp-common-white);
+        border: none;
+    }
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+                <img src="https://agencyvn.com/wp-content/uploads/2022/07/hinh-anh-tuyen-dung-dep-chuyen-nghiep-an-tuong.jpg" alt="logo" />
+            </div>
+            <div class="search">
+                <form action="/search" method="GET">
+                    <div class="search-garident">
+                        <input type="text" name="query" placeholder="Tìm kiếm" required>
+                    </div>
+                    <div>
+                        <button type="submit" class="search-btn">
+                            <i class=" icon-search"></i>
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>
+
+
+        </header>
+        <section>
+            <div>
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+        </section>
+        <footer>
+            Footer
+        </footer>
+        
+    </div>
+    
+    
+</body>
+</html>
